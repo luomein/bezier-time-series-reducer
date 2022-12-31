@@ -47,18 +47,18 @@ public struct SingleBezierTimeSeriesReducer: ReducerProtocol{
         }
         
         public struct PopoverEditingState: Equatable{
-            var plot = true
-            var showLastPoint = false
-            var showTrace = true
-            var showReferenceLine = true
-            var lastPointColor = Color.black
-            var traceColor = Color.black
-            var referenceColor = Color.black
-            var lastPointSize : Double = 5
-            var referenceLineWidth : Double = 2
-            var traceWidth : Double = 2
-            var traceOption : BezierTimeSeriesDrawingOption.TraceOption = .all
-            var referenceLineOption : BezierTimeSeriesDrawingOption.ReferenceLineOption = .lastOne
+            public var plot = true
+            public var showLastPoint = false
+            public var showTrace = true
+            public var showReferenceLine = true
+            public var lastPointColor = Color.black
+            public var traceColor = Color.black
+            public var referenceColor = Color.black
+            public var lastPointSize : Double = 5
+            public var referenceLineWidth : Double = 2
+            public var traceWidth : Double = 2
+            public var traceOption : BezierTimeSeriesDrawingOption.TraceOption = .all
+            public var referenceLineOption : BezierTimeSeriesDrawingOption.ReferenceLineOption = .lastOne
             
             func updateState( state: inout State){
                 state.plot = self.plot
