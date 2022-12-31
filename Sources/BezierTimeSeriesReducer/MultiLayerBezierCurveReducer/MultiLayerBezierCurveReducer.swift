@@ -28,6 +28,8 @@ public struct MultiLayerBezierCurveReducer{
         case jointBezier1stReducer(SingleBezierTimeSeriesReducer.Action)
         case jointBezier2ndReducer(SingleBezierTimeSeriesReducer.Action)
         case jointBezier3rdReducer(SingleBezierTimeSeriesReducer.Action)
+        case jointBezier4thReducer(SingleBezierTimeSeriesReducer.Action)
+        case jointBezier5thReducer(SingleBezierTimeSeriesReducer.Action)
         case saveState(Data, String)
     }
     public struct DebounceID : Hashable{
